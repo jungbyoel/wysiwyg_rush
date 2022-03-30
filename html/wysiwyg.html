@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    
+    <meta charset="utf-8">
+
+    <title>WYSIWYG | Web@cadémie</title>
+    <link href="#" rel="image_src" type="image/jpeg">
+
+    
+    <link href="https://fonts.gstatic.com" media="all" rel="preconnect" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" media="all" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link  media="all" href="../style/wysiwyg.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+
+<main>
+    <section class="glass">
+
+        <div class="dashboard">
+            <div id="result">
+
+            </div> 
+            
+        </div>
+        
+        <div class="tasks">
+            <div style="text-align: center"><h1>My Wysiwyg :</h1></div>
+            <div class="cards">
+                <div class="card">
+                    <table>
+                        <tr>
+                            <td><i class="link material-icons" id="save">task_alt</i></td>
+                            <td><i class="link material-icons" id="delete">delete</i></td>
+                            <td><input type="color" id="head" name="head"></td>
+                            <td id="center"><i class="fa fa-align-center"></i></td>
+                            <td id="right"><i class="fa fa-align-right"></i></td>
+                            <td id="justify"><i class="fa fa-align-justify"></i></td>
+                            <td id="left"><i class="fa fa-align-left"></i></td>
+                            <td id="font"><i class="fa fa-font"></i></td>
+                        </tr>
+                    </table>
+                    <div id="menuArea">
+                        <textarea id="textarea" name="text" class="div" spellcheck="false" cols="60" rows="17"></textarea>
+                        <ul id="menu">
+                            <li id="bold">
+                                <i class="bold material-icons">
+                                    format_bold
+                                </i>
+                            </li>
+                            <li id="italic">
+                                <i class="italic material-icons">
+                                    format_italic
+                                </i>
+                            </li>
+                            <li id="underline">
+                                <i class="underline material-icons">
+                                    format_underlined
+                                </i>
+                            </li>
+                            <li id="link">
+                                <i class="link material-icons">
+                                    insert_link
+                                </i>
+                            </li>
+                            <li id="del">
+                                <i class="strikethrough material-icons">
+                                    format_strikethrough
+                                </i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="circle1"></div>
+<div class="circle2"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../js/my_wysiwyg.js"></script>
+</body>
+</html>

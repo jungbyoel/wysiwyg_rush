@@ -1,0 +1,143 @@
+ * {
+    
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+.card {
+    background: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    border-radius: 1rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    /* display: flex; */
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 2rem;
+} 
+
+#menuArea {
+    display: flex;
+}
+
+.circle1 {
+    right: 2%;
+    top: 2%;
+}
+
+.circle1, .circle2 {
+    background: #fff;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    border-radius: 50%;
+    height: 20rem;
+    position: absolute;
+    width: 20rem;
+}
+
+.circle2 {
+    bottom: 2%;
+    left: 2%;
+}
+
+.dashboard {
+    align-items: flex-start; 
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius:2rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+} 
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px 5px 20px;
+}
+
+#result {
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 35vw;
+    overflow-wrap: break-word;
+}
+
+
+.glass {
+    backdrop-filter: blur(2rem);
+    background: #fff;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    display: flex;
+    min-height: 80vh;
+    width: 90%;
+    z-index: 2;
+} 
+
+
+
+.tasks {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5rem;
+} 
+
+h1 {
+    color: #426696;
+    font-size: 3rem;
+    font-weight: 600;
+    opacity: .8;
+    text-transform: uppercase;
+}
+
+h2, p, ul, td {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: .8;
+    text-decoration: none;
+}
+
+td {
+    width: 2vw;
+    padding: 1vw;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td:hover, li:hover {
+    color: #8a65c6;
+}
+
+
+main {
+    align-items: center;
+    animation: gradient 15s ease infinite;
+    background: linear-gradient(-45deg, #8665df, #6a0e8f, #6cebda, #23d5bd, #23d5bd);
+    background-size: 400% 400%;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#textarea {
+    width: 520px;
+}
+
+@keyframes gradient {
+    0%, 100% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
